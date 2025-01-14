@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+header{
+    top: 0;
+    text-align: center;
+    padding: 1rem 0;
+    position: sticky;
+    z-index: 10;
+}
+
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 8vh;
+}
+
+.navList{
+    display: flex;
+    list-style: none;
+}
+
+.navList li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.logo{
+    width: 80px;
+    height: auto;
+}
