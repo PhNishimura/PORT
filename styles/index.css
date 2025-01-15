@@ -1,27 +1,27 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 a{
     text-decoration: none;
-}
-header{
-    top: 0;
-    text-align: center;
-    padding: 1rem 0;
-    position: sticky;
-    z-index: 10;
+    color: white;
+    transition: 0.4s;
 }
 
+a:hover{
+    opacity: 0.8;
+}
 
 .navBar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
-    height: 8vh;
+    height: 10vh;
+    background-color: #1C4B8E;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    border-bottom: 2px solid black;
 }
 
 .navList{
@@ -35,6 +35,36 @@ header{
 }
 
 .logo{
-    width: 80px;
+    font-size: 26px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    background-color: #1C4B8E;
+    border-bottom: 2px solid black;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+
+.info{
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #fff;
+}
+
+.code{
+    width: 245px;
     height: auto;
+}
+
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
 }
