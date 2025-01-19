@@ -1,70 +1,278 @@
+/* Estilos Gerais */
+body {
+    background-image: url(/port/fundo.png);
+    background-size: cover;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    color: #fff;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
     transition: 0.4s;
 }
 
-a:hover{
+a:hover {
     opacity: 0.8;
 }
 
-.navBar{
+/* Header */
+.navBar {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
     height: 10vh;
-    background-color: #1C4B8E;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
 
-.navList{
+.navList {
     display: flex;
     list-style: none;
 }
 
-.navList li{
+.navList li {
     letter-spacing: 3px;
     margin-left: 32px;
 }
 
-.logo{
+.logo {
     font-size: 26px;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
-.center{
+.menu-toggle {
+    display: none; /* Oculta o ícone por padrão */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
+/* Seção de Introdução */
+.intro .center {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 40vh;
-    background-color: #1C4B8E;
-    border-bottom: 2px solid black;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid black;
 }
 
-.info{
+.intro .info {
     font-size: 27px;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #fff;
 }
 
-.code{
+.intro .code {
     width: 245px;
     height: auto;
 }
 
-.project{
+/* Seção de Projetos */
+.projects .project {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 25vh;
+}
+
+.projects .projectInfo {
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.projects .imgProject, .projects .imgProject2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.projects .imgProject2 {
+    margin-top: 25px;
+}
+
+.projects .imgProjct1 {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.projects .imgProjct1:hover {
+    transform: scale(1.05);
+}
+
+.projects figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/* Seção de Habilidades */
+
+.skills h1 {
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.skills .skillsInfo {
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.skills .skillsImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    flex-wrap: wrap;
+}
+
+.skills .imgSkills, .skills .imgSkills2 {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.skills .imgSkills:hover, .skills .imgSkills2:hover {
+    transform: scale(1.05);
+}
+
+/* Seção de Contato */
+.contact h1 {
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navBar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navList {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navList.active {
+        display: flex;
+    }
+
+    .navList li {
+        margin: 10px 0;
+    }
+
+    .intro .center {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .intro .info {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .intro .code {
+        width: 150px;
+    }
+
+    .projects .projectInfo {
+        font-size: 20px;
+    }
+
+    .projects .imgProject, .projects .imgProject2 {
+        flex-direction: column;
+    }
+
+    .projects .imgProjct1 {
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .projects figcaption {
+        font-size: 16px;
+    }
+
+    .skills .skillsImg {
+        gap: 50px;
+    }
+
+    .skills .imgSkills, .skills .imgSkills2 {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro .info {
+        font-size: 18px;
+    }
+
+    .projects .projectInfo {
+        font-size: 18px;
+    }
+
+    .projects .imgProjct1 {
+        max-width: 250px;
+    }
+
+    .projects figcaption {
+        font-size: 14px;
+    }
+
+    .skills .skillsImg {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .skills .imgSkills, .skills .imgSkills2 {
+        width: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex; /* Exibe o ícone em telas menores */
+    }
+
+    .navList {
+        display: none; /* Oculta a lista de navegação por padrão */
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro para o menu */
+        position: absolute;
+        top: 10vh; /* Posiciona o menu abaixo do header */
+        left: 0;
+    }
+
+    .navList.active {
+        display: flex; /* Exibe a lista quando o menu está ativo */
+    }
 }

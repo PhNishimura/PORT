@@ -10,25 +10,86 @@
     <header>
         <nav class="navBar">
             <a class="logo" href="">Portifolio</a> 
-            <ul class="navList"> 
-                <li><a href="pages/projetcs.html">PROJETOS</a></li>
-                <li><a href="pages/skills.html">HABILIDADES</a></li>
-                <li><a href="pages/contact.html">CONTATO</a></li>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navList" id="nav-list"> 
+                <li><a href="#projects">PROJETOS</a></li>
+                <li><a href="#skills">HABILIDADES</a></li>
+                <li><a href="#contact">CONTATO</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="center">
-            <h1 class="info"> Olá meu nome é Pedro Nishimura <br> estou em busca de uma vaga como <br>desenvolvedor junior</h1>
-            <img src="port/code.png" alt="code" class="code"> 
-        </div>
+        <!-- Seção de Introdução -->
+        <section class="intro">
+            <div class="center">
+                <h1 class="info">Olá, meu nome é Pedro Nishimura <br> Estou em busca de uma vaga como <br>Desenvolvedor Júnior</h1>
+                <img src="port/code.png" alt="code" class="code"> 
+            </div>
+        </section>
 
-        <div class="project">
+        <!-- Seção de Projetos -->
+        <section id="projects" class="projects">
+            <div class="project">
+                <h1 class="projectInfo">PROJETOS</h1>
+            </div>
+            <div class="imgProject">
+                <figure>
+                    <img src="/port/projeto1.png" alt="projeto1" class="imgProjct1">
+                    <figcaption>SITE DE VENDAS ECOMMERCE</figcaption>
+                </figure>
+                <figure>
+                    <img src="/port/projeto2.png" alt="projeto2" class="imgProjct1">
+                    <figcaption>PROJETO COPIA STEAM</figcaption>
+                </figure>
+            </div>
+            <div class="imgProject2">
+                <figure>
+                    <img src="/port/projeto3.png" alt="projeto3" class="imgProjct1">
+                    <figcaption>COLETOR DE DADOS DE FERRAMENTAS</figcaption>
+                </figure>
+                <figure>
+                    <img src="/port/projeto4.png" alt="projeto4" class="imgProjct1">
+                    <figcaption>ECOMMERCE PAPELARIA</figcaption>
+                </figure>
+            </div>
+        </section>
 
-            <h1 class="projectInfo">PROJETOS</h1>
+        <!-- Seção de Habilidades -->
+        <section id="skills" class="skills">
+            <div class="skills">
+                <h1 class="skillsInfo">HABILIDADES</h1>
+            </div>
+            <div class="skillsImg">
+                <img src="/port/html.png" alt="html" class="imgSkills">
+                <img src="/port/css.png" alt="css" class="imgSkills">
+                <img src="/port/js.png" alt="js" class="imgSkills">
+                <img src="/port/java.png" alt="java" class="imgSkills">
+            </div>
+            <div class="skillsImg">
+                <img src="/port/python.png" alt="python" class="imgSkills2">
+                <img src="/port/sql-server.png" alt="sql" class="imgSkills2">
+                <img src="/port/figma.png" alt="figma" class="imgSkills2">
+            </div>
+        </section>
 
-        </div>
+        <!-- Seção de Contato -->
+        <section id="contact" class="contact">
+            <div class="contact">
+                <h1>CONTATO</h1>
+            </div>
+        </section>
     </main>
+
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            var navList = document.getElementById('nav-list');
+            navList.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
