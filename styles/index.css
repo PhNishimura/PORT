@@ -1,10 +1,4 @@
 /* Estilos Gerais */
-body {
-    background-image: url(/imgs/fundoo.png);
-    background-size: cover;
-    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    color: #fff;
-}
 
 * {
     margin: 0;
