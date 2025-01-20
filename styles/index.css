@@ -131,6 +131,7 @@ a:hover {
     letter-spacing: 4px;
     text-align: center;
     margin: 25px 0;
+    margin-top: 150px;
 }
 
 .skills .skillsInfo {
@@ -166,6 +167,39 @@ a:hover {
     margin: 25px 0;
 }
 
+.contacts h1 {
+    margin-top: 150px;
+}
+
+.imgContact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; 
+    margin-bottom: 78px;
+    flex-wrap: wrap; /* Adiciona o wrap para reorganizar os itens */
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+}
+
+.contact-item h1 {
+    margin-bottom: 10px; 
+}
+
+.contact-item img {
+    width: 150px; 
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.contact-item img:hover {
+    transform: scale(1.05); 
+}
 /* Responsividade */
 @media (max-width: 768px) {
     .navBar {
@@ -210,12 +244,14 @@ a:hover {
 
     .projects .imgProject, .projects .imgProject2 {
         flex-direction: column;
+        align-items: center;
     }
 
     .projects .imgProjct1 {
         max-width: 300px;
         margin-bottom: 20px;
     }
+    
 
     .projects figcaption {
         font-size: 16px;
@@ -227,6 +263,22 @@ a:hover {
 
     .skills .imgSkills, .skills .imgSkills2 {
         width: 80px;
+    }
+
+    .contact h1 {
+        font-size: 22px;
+    }
+
+    .imgContact {
+        gap: 10px;
+    }
+
+    .contact-item img {
+        width: 120px; /* Reduz o tamanho das imagens */
+    }
+
+    .contact-item h1 {
+        font-size: 16px; /* Ajusta o tamanho do título */
     }
 }
 
@@ -255,24 +307,41 @@ a:hover {
     .skills .imgSkills, .skills .imgSkills2 {
         width: 60px;
     }
+
+    .contact h1 {
+        font-size: 20px;
+    }
+
+    .imgContact {
+        flex-direction: column; /* Empilha as imagens na vertical */
+        gap: 20px;
+    }
+
+    .contact-item img {
+        width: 100px; /* Reduz ainda mais o tamanho das imagens */
+    }
+
+    .contact-item h1 {
+        font-size: 14px; /* Ajusta o tamanho do título */
+    }
 }
 
 @media (max-width: 768px) {
     .menu-toggle {
-        display: flex; /* Exibe o ícone em telas menores */
+        display: flex;
     }
 
     .navList {
-        display: none; /* Oculta a lista de navegação por padrão */
+        display: none; 
         flex-direction: column;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro para o menu */
+        background-color: rgba(0, 0, 0, 0.9); 
         position: absolute;
-        top: 10vh; /* Posiciona o menu abaixo do header */
+        top: 10vh; 
         left: 0;
     }
 
     .navList.active {
-        display: flex; /* Exibe a lista quando o menu está ativo */
+        display: flex; 
     }
 }
