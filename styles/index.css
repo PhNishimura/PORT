@@ -205,6 +205,21 @@ html {
 .contact-item img:hover {
     transform: scale(1.05); 
 }
+
+
+
+.portfolio-item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.portfolio-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     .navBar {
