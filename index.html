@@ -1,127 +1,208 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Nishimura</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <style>
-        body {
-            background-image: url(./imgs/teste.png);
-            background-size: cover;
-            font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-            color: #fff;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <nav class="navBar">
-            <a class="logo" href="">Portfolio</a> 
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="navList" id="nav-list"> 
-                <li><a href="#projects">PROJETOS</a></li>
-                <li><a href="#skills">HABILIDADES</a></li>
-                <li><a href="#contact">CONTATO</a></li>
-                <li><a href="https://drive.google.com/file/d/1mvrc8kwRuu7musRQNoHczYyDGAMr9Qbi/view?usp=sharing" target="_blank">CURRICULO</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Seção de Introdução -->
-        <section class="intro">
-            <div class="center">
-                <h1 class="info">Olá, meu nome é Pedro Nishimura <br> Estou em busca de uma vaga como <br>Desenvolvedor Junior</h1>
-                <img src="imgs/code.png" alt="code" class="code"> 
-            </div>
-        </section>
-
-        <!-- Seção de Projetos -->
-        <section id="projects" class="projects portfolio-item">
-            <div class="project">
-                <h1 class="projectInfo">PROJETOS</h1>
-            </div>
-            <div class="project-grid">
-                <figure class="project-item">
-                    <img src="./imgs/projeto1.png" alt="projeto1" class="project-img">
-                    <figcaption>SITE DE VENDAS ECOMMERCE</figcaption>
-                </figure>
-                <figure class="project-item">
-                    <img src="./imgs/projeto2.png" alt="projeto2" class="project-img">
-                    <figcaption>PROJETO COPIA STEAM</figcaption>
-                </figure>
-                <figure class="project-item">
-                    <img src="./imgs/projeto3.png" alt="projeto3" class="project-img">
-                    <figcaption>COLETOR DE DADOS DE FERRAMENTAS</figcaption>
-                </figure>
-                <figure class="project-item">
-                    <img src="./imgs/projeto4.png" alt="projeto4" class="project-img">
-                    <figcaption>ECOMMERCE PAPELARIA</figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <!-- Seção de Habilidades -->
-        <section id="skills" class="skills portfolio-item">
-            <div class="skills">
-                <h1 class="skillsInfo">HABILIDADES</h1>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="min-h-screen">
+      <!-- Navigation -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-content">
+            <a href="#" class="logo">PORTFOLIO</a>
+            
+            <div class="nav-links">
+              <a href="#projects">PROJETOS</a>
+              <a href="#skills">HABILIDADES</a>
+              <a href="#contact">CONTATO</a>
+              <a href="https://drive.google.com/file/d/1mvrc8kwRuu7musRQNoHczYyDGAMr9Qbi/view?usp=sharing" 
+                 target="_blank">
+                CURRÍCULO
+              </a>
             </div>
 
-            <div class="skillsImg">
-                <img src="./imgs/html.png" alt="html" class="imgSkills">
-                <img src="./imgs/css.png" alt="css" class="imgSkills">
-                <img src="./imgs/js.png" alt="js" class="imgSkills">
-                <img src="./imgs/java.png" alt="java" class="imgSkills">
-            </div>
-            <div class="skillsImg">
-                <img src="./imgs/python.png" alt="python" class="imgSkills2">
-                <img src="./imgs/sql-server.png" alt="sql" class="imgSkills2">
-                <img src="./imgs/figma.png" alt="figma" class="imgSkills2">
-            </div>
-        </section>
+            <button class="menu-toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </button>
+          </div>
+        </div>
 
-        <!-- Seção de Contato -->
-        <section id="contact" class="contact portfolio-item">
-            <div class="contacts">
-                <h1>CONTATO</h1>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+          <div class="mobile-links">
+            <a href="#projects">PROJETOS</a>
+            <a href="#skills">HABILIDADES</a>
+            <a href="#contact">CONTATO</a>
+            <a href="https://drive.google.com/file/d/1mvrc8kwRuu7musRQNoHczYyDGAMr9Qbi/view?usp=sharing" 
+               target="_blank">
+              CURRÍCULO
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1>
+                Olá, meu nome é<br />
+                <span class="highlight">Pedro Nishimura</span>
+              </h1>
+              <p>
+                Desenvolvedor Junior apaixonado por criar soluções inovadoras
+              </p>
             </div>
-        
-            <div class="imgContact"> 
-                <div class="contact-item">
-                    <h1>E-MAIL</h1>
-                    <a href="mailto:pedrobachaalani1701@gmail.com">
-                        <img src="./imgs/email.png" alt="email">
-                    </a>
-                </div>
-
-                <div class="contact-item">
-                    <h1>CURRICULO</h1>
-                    <a href="https://drive.google.com/file/d/1mvrc8kwRuu7musRQNoHczYyDGAMr9Qbi/view?usp=sharing" target=”_blank”>
-                        <img src="./imgs/document.png" alt="document">
-                    </a>
-                </div>
-
-                <div class="contact-item">
-                    <h1>GITHUB</h1>
-                    <a href="https://github.com/PhNishimura" target=”_blank”>
-                        <img src="./imgs/github-logo.png" alt="git">
-                    </a>
-                </div>
-
-                <div class="contact-item">
-                    <h1>LINKEDIN</h1>
-                    <a href="https://www.linkedin.com/in/pedro-henrique-nishimura-bachaalani-8b721221a/" target=”_blank”>
-                        <img src="./imgs/linkedin.png" alt="linkedin">
-                    </a>
-                </div>
+            <div class="hero-image">
+              <img 
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                alt="Coding"
+              />
             </div>
-        </section>
-    </main>
-    <script src="styles/java.js"></script>
-</body>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects scroll-fade">
+        <div class="container">
+          <h2>PROJETOS</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <img 
+                src="./imgs/projeto1.png"
+                alt="Ecommerce"
+              />
+              <div class="project-info">
+                <h3>Site de Vendas Ecommerce</h3>
+                <p>Plataforma completa de e-commerce com sistema de pagamento integrado</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img 
+                src="./imgs/projeto2.png"
+                alt="Steam"
+              />
+              <div class="project-info">
+                <h3>Projeto Cópia Steam</h3>
+                <p>Clone da interface da Steam com recursos de biblioteca de jogos</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img 
+                src="./imgs/projeto3.png"
+                alt="Tools"
+              />
+              <div class="project-info">
+                <h3>Coletor de Dados de Ferramentas</h3>
+                <p>Sistema de coleta e análise de dados para ferramentas industriais</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img 
+                src="./imgs/projeto4.png"
+                alt="Stationery"
+              />
+              <div class="project-info">
+                <h3>Ecommerce Papelaria</h3>
+                <p>Loja virtual especializada em materiais de escritório e papelaria</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills scroll-fade">
+        <div class="container">
+          <h2>HABILIDADES</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h3>Backend</h3>
+              <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>SQL Server</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <h3>Design</h3>
+              <ul>
+                <li>Figma</li>
+                <li>UI/UX</li>
+                <li>Responsive Design</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <h3>Suporte</h3>
+              <ul>
+                <li>Help Desk</li>
+                <li>Microsoft/Office 365</li>
+                <li>Manutenção</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact scroll-fade">
+        <div class="container">
+          <h2>CONTATO</h2>
+          <div class="contact-grid">
+            <a href="mailto:pedrobachaalani1701@gmail.com" class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>E-mail</span>
+            </a>
+            <a href="https://drive.google.com/file/d/1mvrc8kwRuu7musRQNoHczYyDGAMr9Qbi/view?usp=sharing" 
+               target="_blank" 
+               class="contact-item">
+              <i class="fa-solid fa-file-lines"></i>
+              <span>Currículo</span>
+            </a>
+            <a href="https://github.com/PhNishimura" 
+               target="_blank" 
+               class="contact-item">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/pedro-henrique-nishimura-bachaalani-8b721221a/" 
+               target="_blank" 
+               class="contact-item">
+              <i class="fa-brands fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
